@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Votes</title>
+    <script src="biblio.js"></script>
+  </head>
+
+  <body>
+    <form action="sai_valid.html">
+      <h2>SAISIE DES VOTES</h2>
+      <table>
+        <tr>
+          <td>
+            <h3>Electeur N°:</h3>
+          </td>
+          <td>
+            <input
+              type="text"
+              name=""
+              id="e"
+              minlength="4"
+              maxlength="4"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <h2>Les candidats</h2>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <h3>Filles</h3>
+          </th>
+          <th>
+            <h3>Garçon</h3>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <h3><input type="radio" name="f" id="as" />AbbassiSihem</h3>
+          </td>
+          <td>
+            <h3><input type="radio" name="g" id="bk" />Ben AbdallahKacem</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3><input type="radio" name="f" id="tm" />TroudiMeryem</h3>
+          </td>
+          <td>
+            <h3><input type="radio" name="g" id="db" />DridiBrahim</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit" onclick="return verif2()">Voter</button>
+          </td>
+          <td><button type="reset">Annuler</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

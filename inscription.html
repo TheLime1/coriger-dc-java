@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <script src="biblio.js"></script>
+  </head>
+
+  <body>
+    <form action="ins_valid.html">
+      <center>
+        <h2>INCRIPTION DES ELECTEURS</h2>
+      </center>
+      <table>
+        <tr>
+          <td>Num:</td>
+          <td>
+            <input
+              type="text"
+              name=""
+              id="num"
+              minlength="4"
+              maxlength="4"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Nom:</td>
+          <td><input type="text" name="" id="n" required /></td>
+        </tr>
+        <tr>
+          <td>Prénom:</td>
+          <td><input type="text" name="" id="p" required /></td>
+        </tr>
+        <tr>
+          <td>Genre:</td>
+          <td>
+            <input type="radio" name="gr" id="f" />Fille
+            <input type="radio" name="gr" id="g" />Garçon
+          </td>
+        </tr>
+        <tr>
+          <td>Niveau scolaire</td>
+          <td>
+            <select name="" id="s">
+              <option value="">7ème</option>
+              <option value="">8ème</option>
+              <option value="">9ème</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit" onclick="return verif()">Inscrire</button>
+            <button type="reset">Annuler</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
